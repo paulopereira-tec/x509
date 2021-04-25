@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>dotcreative.x509</PackageId>
+    <Authors>Paulo Pereira</Authors>
+    <Product>x509Services</Product>
+    <Description>Faz a leitura de certificados digitais para criptografia e assinatura de dados e arquivos.</Description>
+    <Copyright>Paulo Pereira</Copyright>
+    <Company>Dot Creative - Soluções em TI</Company>
+    <PackageProjectUrl>https://github.com/paulopereira-tec/x509</PackageProjectUrl>
+    <PackageReleaseNotes>Nesta versão:
+- faz a leitura de certificaods no formato "*.pfx" e certificados instalados no computador.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
+  </ItemGroup>
+
+</Project>
