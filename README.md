@@ -10,6 +10,12 @@ O próximo objetivo será a assinatura de documentos PDF e outros tipos de arqui
 Em breve, também há espectativa para a implementação de uso de certificados conhecidos como A3 - nuvem, token ou cartão.
 
 # Exemplo de implementação
+*Observação importante:* No IIS (Internet Information Services) ocorre um erro no momento da leitura do certificado e é retornada a excessão "System cannot find the specified file". Encontrei a solução em https://stackoverflow.com/questions/17840825/cryptographicexception-was-unhandled-system-cannot-find-the-specified-file (resposta 241) que basicamente é seguir o passo-a-passo indicado abaixo:
+- Vá para o Gerenciador de IIS
+- Vá para a instância do pool de aplicativos
+- Clique em configurações avançadas
+- Em Modelo de processo, defina Carregar perfil de usuário como verdadeiro
+
 ## Para utilização de certificados em formato de arquivo PFX
     Certificate cert = new Certificate("localDoCertificadoPFX", "SenhaDoCertificado");
 
