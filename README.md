@@ -1,3 +1,5 @@
+[![NuGet](https://img.shields.io/nuget/v/dotcreative.x509.svg?style=for-the-badge)](https://www.nuget.org/packages/dotcreative.x509/)
+
 # Descrição
 O objetivo desse projeto é prover ferramentas e métodos para facilitar o manuseio de certificados digitais (e-CPF e e-CNPJ). Atualmente está disponível a utilização de certificados no formato de arquivos "*.pfx". - Formato conhecido como A1.
 
